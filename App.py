@@ -73,11 +73,11 @@ class Ui_Dialog(object):
         while number > 0:
             modulo = number % n
             number = floor(number / n)
-
             if modulo <= 9:
                 binary = str(modulo) + binary
             else:
                 binary = chr(modulo + 55) + binary
+
         return binary
 
 
